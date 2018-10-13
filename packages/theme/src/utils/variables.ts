@@ -1,3 +1,4 @@
+// (DEPRECATED) old color variables
 const white = '#ffffff';
 const red = '#e53935';
 const green = '#00c853';
@@ -28,6 +29,37 @@ const special07 = '#d6f8bb';
 const special08 = '#f5f8bb';
 const special09 = '#f8e5bb';
 const special10 = '#f8cebb';
+
+// KDS 1.0 brand colors.
+const neutral01 = '#fff';
+const neutral02 = '#f6f7f8';
+const neutral03 = '#edf1f2';
+const neutral04 = '#e2e6e8';
+const neutral05 = '#c2c7c8';
+const neutral06 = '#949a9d';
+const neutral07 = '#676b6d';
+const neutral08 = '#484c4f';
+const neutral09 = '#2b2f33';
+
+const cobalt01 = '#5597e0';
+const cobalt02 = '#2053af';
+const cobalt03 = '#102a59';
+
+const kata01 = '#4da3ff';
+const kata02 = '#006fe6';
+const kata03 = '#003e80';
+
+const lizard01 = '#00ea61';
+const lizard02 = '#59a444';
+const lizard03 = '#658f3d';
+
+const tomato01 = '#fc6627';
+const tomato02 = '#dc211c';
+const tomato03 = '#af1a16';
+
+const bee01 = '#feef99';
+const bee02 = '#fde034';
+const bee03 = '#ebc902';
 
 // Spacer widths in rem units, counted from the base font size 13px.
 const space1 = '0.615384615rem'; // 8px
@@ -118,7 +150,73 @@ export const colors = {
   special07,
   special08,
   special09,
-  special10
+  special10,
+
+  // new KDS colors
+  neutral01,
+  neutral02,
+  neutral03,
+  neutral04,
+  neutral05,
+  neutral06,
+  neutral07,
+  neutral08,
+  neutral09,
+  cobalt01,
+  cobalt02,
+  cobalt03,
+  kata01,
+  kata02,
+  kata03,
+  lizard01,
+  lizard02,
+  lizard03,
+  tomato01,
+  tomato02,
+  tomato03,
+  bee01,
+  bee02,
+  bee03
+};
+
+export const spacing = {
+  spacing2Xs: '2px',
+  spacingXs: '4px',
+  spacingSm: '8px',
+  spacingSmMd: '12px',
+  spacingMd: '16px',
+  spacingLg: '24px',
+  spacingXl: '40px',
+  spacing2Xl: '64px',
+  spacing3Xl: '80px'
+};
+
+export const fontSizes = {
+  deka: '12px',
+  hecto: '14px',
+  kilo: '16px',
+  mega: '18px',
+  giga: '20px',
+  tera: '24px',
+  peta: '28px'
+};
+
+export const lineHeights = {
+  deka: '1.25',
+  hecto: '1.5',
+  kilo: '1.5',
+  mega: '1.25',
+  giga: '1.25',
+  tera: '1.125',
+  peta: '1.125'
+};
+
+export const elevationShadow = {
+  elevationZ100: '0 1px 2px 0 rgba(0, 0, 0, 0.25);',
+  elevationZ200: '0 2px 4px 0 rgba(0, 0, 0, 0.25);',
+  elevationZ300: '0 4px 8px 0 rgba(0, 0, 0, 0.25)',
+  elevationZ400: '0 8px 16px 0 rgba(0, 0, 0, 0.25)',
+  elevationZ500: '0 12px 24px 0 rgba(0, 0, 0, 0.25)'
 };
 
 export const spaces = {
@@ -198,7 +296,13 @@ export const variables = {
   borderRadiuses,
   layerShadows,
   transitions,
-  fontProps
+  fontProps,
+
+  // new KDS 1.0 properties
+  spacing,
+  fontSizes,
+  lineHeights,
+  elevationShadow
 };
 
 export default variables;
