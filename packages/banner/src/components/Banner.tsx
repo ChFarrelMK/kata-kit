@@ -53,9 +53,9 @@ const Icon = styled('div')`
   align-items: center;
   justify-content: center;
   margin-right: 16px;
-  font-size: 16px;
-  width: 16px;
-  height: 16px;
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
 `;
 
 const Message = styled('div')`
@@ -74,8 +74,8 @@ const CloseButton = styled<ThemeAttributes, 'button'>('button')`
   cursor: pointer;
   color: ${props => props.textColor};
   font-size: 13px;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 
   &:focus {
     outline: none;
@@ -95,7 +95,12 @@ const Root = styled<ThemeAttributes, 'div'>('div')`
     i {
       display: inline-block;
       color: ${props => props.textColor};
-      height: 16px;
+      height: 24px;
+
+      &:before {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
   }
 
@@ -103,7 +108,12 @@ const Root = styled<ThemeAttributes, 'div'>('div')`
     i {
       display: inline-block;
       color: ${props => props.textColor};
-      height: 13px;
+      height: 24px;
+
+      &:before {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
   }
 `;
