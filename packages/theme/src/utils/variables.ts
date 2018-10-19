@@ -49,17 +49,17 @@ const kata01 = '#4da3ff';
 const kata02 = '#006fe6';
 const kata03 = '#003e80';
 
-const lizard01 = '#00ea61';
-const lizard02 = '#59a444';
-const lizard03 = '#658f3d';
+const green01 = '#00ea61';
+const green02 = '#59a444';
+const green03 = '#658f3d';
 
-const tomato01 = '#fc6627';
-const tomato02 = '#dc211c';
-const tomato03 = '#af1a16';
+const red01 = '#fc6627';
+const red02 = '#dc211c';
+const red03 = '#af1a16';
 
-const bee01 = '#feef99';
-const bee02 = '#fde034';
-const bee03 = '#ebc902';
+const yellow01 = '#feef99';
+const yellow02 = '#fde034';
+const yellow03 = '#ebc902';
 
 // Spacer widths in rem units, counted from the base font size 13px.
 const space1 = '0.615384615rem'; // 8px
@@ -168,15 +168,15 @@ export const colors = {
   kata01,
   kata02,
   kata03,
-  lizard01,
-  lizard02,
-  lizard03,
-  tomato01,
-  tomato02,
-  tomato03,
-  bee01,
-  bee02,
-  bee03
+  green01,
+  green02,
+  green03,
+  red01,
+  red02,
+  red03,
+  yellow01,
+  yellow02,
+  yellow03
 };
 
 export const spacing = {
