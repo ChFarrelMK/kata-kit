@@ -8,7 +8,9 @@ import FormGroup from '../src/components/FormGroup';
 import FormLabel from '../src/components/FormLabel';
 import FormError from '../src/components/FormError';
 import InputText from '../src/components/InputText';
+import InputAddon from '../src/components/InputAddon';
 import InputTextarea from '../src/components/InputTextarea';
+import InputGroup from '../src/components/InputGroup';
 
 const StoryWrapper: StoryDecorator = storyFn => <Wrapper>{storyFn()}</Wrapper>;
 
@@ -16,7 +18,14 @@ const story: any = storiesOf('Components|Form', module)
   .addDecorator(StoryWrapper)
   .addDecorator(
     wInfo({
-      propTables: [FormGroup, FormLabel, FormError, InputText, InputTextarea]
+      propTables: [
+        FormGroup,
+        FormLabel,
+        FormError,
+        InputText,
+        InputTextarea,
+        InputAddon
+      ]
     })
   );
 
@@ -66,6 +75,30 @@ story.add(
           rows={4}
           placeholder="Type here..."
         />
+      </FormGroup>
+      <FormGroup>
+        <InputGroup>
+          <InputAddon>dashboard.kata.ai/</InputAddon>
+          <InputText
+            id="firstName_dummy"
+            name="firstName_dummy"
+            placeholder="Type here..."
+            addon
+          />
+        </InputGroup>
+      </FormGroup>
+      <FormGroup>
+        <InputGroup>
+          <InputAddon isIcon>
+            <i className="icon-account" />
+          </InputAddon>
+          <InputText
+            id="firstName_dummy"
+            name="firstName_dummy"
+            placeholder="Type here..."
+            addon
+          />
+        </InputGroup>
       </FormGroup>
     </div>
   ),
@@ -133,7 +166,11 @@ story.add(
     <div>
       <FormGroup>
         <FormLabel htmlFor="firstName">First Name</FormLabel>
-        <InputText id="firstName" name="firstName" placeholder="Type here..." />
+        <InputText
+          id="firstName_dummy"
+          name="firstName_dummy"
+          placeholder="Type here..."
+        />
       </FormGroup>
       <FormGroup>
         <FormLabel htmlFor="email_dummy" errors>
@@ -148,6 +185,26 @@ story.add(
         <FormError>Please enter an email address.</FormError>
       </FormGroup>
     </div>
+  ),
+  { info: { disable: true } }
+);
+
+story.add(
+  'Input Addon',
+  () => (
+    <FormGroup>
+      <InputGroup>
+        <InputAddon isIcon>
+          <i className="icon-account" />
+        </InputAddon>
+        <InputText
+          id="firstName_dummy"
+          name="firstName_dummy"
+          placeholder="Type here..."
+          addon
+        />
+      </InputGroup>
+    </FormGroup>
   ),
   { info: { disable: true } }
 );
